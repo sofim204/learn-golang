@@ -5,11 +5,11 @@ import (
 	"log"
 
 	"example.com/greetings"
-	"rsc.io/quote" // importing from external package
+	"rsc.io/quote" // importing from external package (https://pkg.go.dev/search?q=quote)
 )
 
 func main() {
-	fmt.Println(quote.Go())
+	fmt.Println(quote.Glass()) // pilihan function nya ada quote.Hello(), quote.Glass(), quote.Go(), quote.Opt()
 	fmt.Println("Halo sop!")
 
 	// Set properties of the predefined Logger, including
@@ -21,7 +21,7 @@ func main() {
 
 	// get greeting message and print it.
 	// deklare variable message dan err
-	message, err := greetings.Hello("") // beri text / nama disini, ex: greetings.Hello("Sopp20")
+	message, err := greetings.Hello("Muhammad Sofi") // beri text / nama disini, ex: greetings.Hello("Sopp20")
 	// Jika nilai yang dikembalikan adalah error, tampilkan di konsol
 	// dan keluar dari program.
 	if err != nil {
